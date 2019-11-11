@@ -19,11 +19,11 @@ $subshine = new Building("サブシャイン60", 240);
 	<h1>Buildingクラスを利用する</h1>
 	<dl>
 		<dt><?=$kasumigaseki->getName() ?></dt>
-		<dd><?=$kasumigaseki->getHeight() ?></dd>
+		<dd><?=$kasumigaseki->getProfile() ?></dd>
 	</dl>
 	<dl>
 		<dt><?=$subshine->getName() ?></dt></dt>
-		<dd><?=$subshine->getHeight() ?></dd>
+		<dd><?=$subshine->getProfile() ?></dd>
 	</dl>
 	<p><a href="index.html">インデックスに戻る</a></p>
 </body>
