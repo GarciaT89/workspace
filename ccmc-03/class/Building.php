@@ -1,8 +1,8 @@
 <?php
 class Building{
     //properties
-    private $name; //建物名
-    private $height;//建物の高さ
+    protected $name; //建物名
+    protected $height;//建物の高さ
     //constructor
     function __construct(string $name, int $height){
         $this->name = $name;
@@ -15,7 +15,7 @@ class Building{
     function setName(string $name){
         $this->name =$name;
     }
-    function getAge():int{
+    function getHeight():int{
         return $this->height;
     }
     function setAge(int $height){

@@ -2,10 +2,7 @@
 require_once("class/Tower.php");
 $tokyoTower = new Tower("東京タワー", 333, 1958);
 $skyTree = new Tower("東京スカイツリー", 634, 2012);
-echo "<pre>";
-var_dump($tokyoTower);
-echo "</pre>";
-exit(0);
+
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -21,11 +18,11 @@ exit(0);
 	<h1>Towerクラスを利用する</h1>
 	<dl>
 		<dt><?=$tokyoTower->getName() ?></dt>
-		<dd><?=$tokyoTower->getProgile() ?></dd>
+		<dd><?=$tokyoTower->getProfile() ?></dd>
 	</dl>
 	<dl>
-		<dt>東京スカイツリー</dt>
-		<dd>東京スカイツリー の高さは 634 mで、2012 年に開業しました。</dd>
+		<dt><?=$skyTree->getName() ?></dt>
+		<dd><?=$skyTree->getProfile() ?></dd>
 	</dl>
 	<p><a href="index.html">インデックスに戻る</a></p>
 </body>
